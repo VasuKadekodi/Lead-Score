@@ -2,13 +2,16 @@
 This analysis is done for X Education and to find ways to get more industry professionals to join their courses. The basic data provided gave us a lot of information about how the potential customers visit the site, the time they spend there, how they reached the site and the conversion rate. 
 
 
-
 ## Table of Contents
-* [Steps_Used](#Steps_Used)
+* [Steps Used](#steps-used)
 * [Conclusions](#conclusions)
 * [Recommendations to improve the business](#recommendations-to-improve-the-business)
 
-## Steps_Used
+
+<!-- You can include any other section that is pertinent to your problem -->
+
+## Steps Used
+
 #### - Cleaning data: 
 The data was partially clean except for a few null values and the option select had to be replaced with a null value since it did not give us much information. Few of the null values were changed to ‘not provided’ so as to not lose much data. Although they were later removed while making dummies. Since there were many from India and few from outside, the elements were changed to ‘India’, ‘Outside India’ and ‘not provided’. 
 
