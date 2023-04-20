@@ -1,38 +1,41 @@
-<h1 align="center"> 📈 Lead-Score Analysis </h1>
+<h1 align="center"> # 📈 Lead Score Analysis for X Education 🎓 </h1>
 
-<p align="center">
-  <img src="https://img.shields.io/github/license/{username}/{repo-name}" alt="License">
-  <img src="https://img.shields.io/github/last-commit/{username}/{repo-name}" alt="Last Commit">
-  <img src="https://img.shields.io/github/issues/{username}/{repo-name}" alt="Issues">
-  <img src="https://img.shields.io/github/stars/{username}/{repo-name}" alt="Stars">
-</p>
 
-<p align="center">
-  Analysis done for X Education to find ways to get more industry professionals to join their courses. 
-</p>
+This analysis was conducted to help X Education increase their enrollment by finding ways to attract more industry professionals to their courses. The provided data gave us insights into how potential customers visit the site, the time they spend there, how they reach the site, and the conversion rate.
 
-<h2 align="center"> Table of Contents </h2>
-
-<ul>
-  <li><a href="#steps-used">Steps Used</a></li>
-  <li><a href="#conclusions">Conclusions</a></li>
-  <li><a href="#recommendations-to-improve-the-business">Recommendations to Improve the Business</a></li>
-  <li><a href="#contact">Contact</a></li>
-</ul>
+## Table of Contents
+* [Steps Used](#steps-used)
+* [Conclusions](#conclusions)
+* [Recommendations](#recommendations)
+* [Contact](#contact)
 
 ## Steps Used
-- Cleaning data: Null values were replaced, irrelevant elements were removed.
-- EDA: A quick exploratory data analysis was done.
-- Dummy Variables: Created dummy variables and used the MinMax Scaler for numeric values.
-- Train-Test split: Split data into training and test sets.
-- Model Building: Used Recursive Feature Elimination (RFE) to obtain the top 15 relevant variables and removed rest based on VIF and p-values.
-- Model Evaluation: Confusion matrix was used and ROC curve was used to find optimum cut off value for accuracy, sensitivity and specificity.
-- Prediction: Test data was used for prediction with an optimum cut off of 0.42.
 
-## Conclusions
-The top variables that matter most in potential buyers are (in descending order):
+#### - Cleaning Data 🧹
+The data was partially clean, but a few null values had to be handled, and the "Select" option was replaced with a null value since it did not provide much information. Some null values were changed to "not provided" to avoid losing too much data, although they were later removed when creating dummy variables. Since there were many entries from India and few from outside, the elements were grouped into "India", "Outside India", and "not provided".
+
+#### - EDA 📊
+A quick exploratory data analysis was performed to check the condition of the data. It was found that many elements in the categorical variables were irrelevant, while the numeric values seemed good and had no outliers.
+
+#### - Dummy Variables 🤖
+Dummy variables were created, and dummies with "not provided" elements were removed. For numeric values, the MinMax Scaler was used.
+
+#### - Train-Test Split 🚂🧪
+The data was split into 70% for training and 30% for testing.
+
+#### - Model Building 🏗️
+Firstly, RFE was used to obtain the top 15 relevant variables. Later, the rest of the variables were manually removed depending on the VIF values and p-value (keeping variables with VIF < 5 and p-value < 0.05).
+
+#### - Model Evaluation 📈
+A confusion matrix was created, and the optimum cutoff value (using the ROC curve) was used to find accuracy, sensitivity, and specificity, which were all around 80%.
+
+#### - Prediction 🤖
+Predictions were made on the test data frame, and an optimum cutoff of 0.42 was used with accuracy of 78%, precision around 77%, and recall around 78%.
+
+## Conclusions 📊📉
+We found that the variables that mattered the most for potential buyers were (in descending order):
 1. Total number of visits
-2. The total time spend on the Website
+2. Total time spent on the website
 3. Lead Origin_Lead Add Form
 4. Last Notable Activity_Unreachable
 5. Last Activity_Had a Phone Conversation
@@ -43,11 +46,11 @@ The top variables that matter most in potential buyers are (in descending order)
 10. What is your current occupation_Student
 11. What is your current occupation_Unemployed
 
-## Recommendations to Improve the Business
-- Give utmost importance to the top variables while planning to achieve maximum registration/enrollment.
-- Design the UI/UX of the website to be more eye-catching, informative and easy to navigate.
-- Provide attractive offers/discounts on the home page to entice visitors.
+## Recommendations 🚀
+- We recommend giving utmost importance to the above variables while planning to achieve maximum registration/enrollment to X Education.
+- As total number of visits and total time spent on the website have a very positive impact on enrollment, we recommend designing a UI/UX of the website that is easy, eye-catching, and informative about the courses.
+- It is also recommended to provide attractive offers/discounts on the home page to pique visitors' curiosity and encourage them to learn more.
 
-## Contact
-Created by [@VasuKadekodi] - feel free to contact me at [vasundharalkadekodi@gmail.com]. 
-
+## Contact 📧
+Created by [@VasundharaLK](https://github.com/VasundharaLK) 💻
+For any questions or feedback, feel free to reach
