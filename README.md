@@ -1,4 +1,4 @@
-<h1 align="center"> # 📈 Lead Score Analysis for X Education 🎓 </h1>
+<h1 align="center">  📈 Lead Score Analysis for X Education 🎓 </h1>
 
 
 This analysis was conducted to help X Education increase their enrollment by finding ways to attract more industry professionals to their courses. The provided data gave us insights into how potential customers visit the site, the time they spend there, how they reach the site, and the conversion rate.
